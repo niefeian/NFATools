@@ -1,0 +1,16 @@
+PODS:
+  - NFATools (0.1.0)
+
+DEPENDENCIES:
+  - NFATools (from `../`)
+
+EXTERNAL SOURCES:
+  NFATools:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  NFATools: 0aa5f334248eef61abf7584b94369fbc69c2c434
+
+PODFILE CHECKSUM: 06d26289027e808e66bffc1abdf16546fbb99900
+
+COCOAPODS: 1.6.1

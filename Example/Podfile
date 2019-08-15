@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'NFATools_Example' do
+  pod 'NFATools', :path => '../'
+
+  target 'NFATools_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

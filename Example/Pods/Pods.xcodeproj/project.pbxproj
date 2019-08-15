@@ -1,0 +1,884 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		254EEB9499B67F72D61F726867020545 /* Pods-NFATools_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CF76C5C91469B0F6F9D77312E4080966 /* Pods-NFATools_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DF61E8F990FD21FC16A85D6F03A6566 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		5958F6011995637A7B504CD73831C1C7 /* Pods-NFATools_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F03D5FD3CECACB696ACD8E74C1AD4E /* Pods-NFATools_Tests-dummy.m */; };
+		62BEA9277466C57448A6CA9AD08FD78F /* Pods-NFATools_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CAB70910F07394B422A95711F49FED /* Pods-NFATools_Example-dummy.m */; };
+		94D0CD661EAC6C3A62C0985508E9D55C /* NFATools-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 916FE78B8E40A2E9D5BB4E6668BFE03D /* NFATools-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4E10810C09D5779A7A3556F8D38E06C /* NFATools-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 50ED6BD2D3DA609FDC5455FE818F134D /* NFATools-dummy.m */; };
+		A60E3C5223055172006F45C1 /* IPageDataPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60E3C3C23055172006F45C1 /* IPageDataPost.swift */; };
+		A60E3C5323055172006F45C1 /* RequestUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60E3C3F23055172006F45C1 /* RequestUtil.swift */; };
+		A60E3C5423055172006F45C1 /* SortUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60E3C4023055172006F45C1 /* SortUtil.swift */; };
+		A60E3C5523055172006F45C1 /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60E3C4123055172006F45C1 /* DateUtil.swift */; };
+		A60E3C5623055172006F45C1 /* UserDefaultsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60E3C4323055172006F45C1 /* UserDefaultsUtil.swift */; };
+		A60E3C5723055172006F45C1 /* FileUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60E3C4423055172006F45C1 /* FileUtil.swift */; };
+		A60E3C5823055172006F45C1 /* Exts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60E3C4523055172006F45C1 /* Exts.swift */; };
+		A60E3C5923055172006F45C1 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60E3C4723055172006F45C1 /* Message.swift */; };
+		A60E3C5A23055172006F45C1 /* MessageDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60E3C4823055172006F45C1 /* MessageDialog.swift */; };
+		A60E3C5B23055172006F45C1 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60E3C4923055172006F45C1 /* CustomAlertView.swift */; };
+		A60E3C5C23055172006F45C1 /* Drop.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60E3C4A23055172006F45C1 /* Drop.swift */; };
+		A60E3C5D23055172006F45C1 /* MsgProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60E3C4B23055172006F45C1 /* MsgProgress.swift */; };
+		A60E3C5E23055172006F45C1 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60E3C4C23055172006F45C1 /* Tools.swift */; };
+		A60E3C5F23055172006F45C1 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60E3C4D23055172006F45C1 /* Const.swift */; };
+		A60E3C6023055172006F45C1 /* WkwebViewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60E3C4F23055172006F45C1 /* WkwebViewConfig.swift */; };
+		A60E3C6123055172006F45C1 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60E3C5023055172006F45C1 /* WebView.swift */; };
+		A60E3C6223055172006F45C1 /* WebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60E3C5123055172006F45C1 /* WebViewModel.swift */; };
+		AF6CFE5AC406C1B2EEAFFC380DFC36A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		EDCAE41F686A02FD115E116D075B38B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		F4D57ED9FEFE2947DE8D31F81F866958 /* Pods-NFATools_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CF771340306612F33706AA2B4F66332 /* Pods-NFATools_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF18D5FEEAC0167269328A23C472D180 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C708FA73851F4799397A05EBB4EA524;
+			remoteInfo = NFATools;
+		};
+		C6903256E408DD8BBA7A2E0DBCBA8A6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5EF7E6440C7E9781E308D08B2F5F4B0;
+			remoteInfo = "Pods-NFATools_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		026A78EBECAA7E6877CBF365A0209002 /* NFATools.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NFATools.xcconfig; sourceTree = "<group>"; };
+		06FB031C18D895F375AEAA61F7759459 /* Pods_NFATools_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NFATools_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ACA5F8E86D03F68C9108581200E76D2 /* Pods-NFATools_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NFATools_Tests-Info.plist"; sourceTree = "<group>"; };
+		17CAB70910F07394B422A95711F49FED /* Pods-NFATools_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NFATools_Example-dummy.m"; sourceTree = "<group>"; };
+		23DEC9FE55830F09196198AB29A70294 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2CCEF347757FC368147A8E9A05140FE7 /* Pods-NFATools_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NFATools_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		365FD6BE4DF5563F4C91C2F670B68096 /* NFATools-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NFATools-Info.plist"; sourceTree = "<group>"; };
+		47A18FC4694A2968A587F650B4AB5FB0 /* Pods-NFATools_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NFATools_Tests.modulemap"; sourceTree = "<group>"; };
+		4CC1A9F65842BBB285DF34C8CE1DC3BC /* Pods-NFATools_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NFATools_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		50ED6BD2D3DA609FDC5455FE818F134D /* NFATools-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NFATools-dummy.m"; sourceTree = "<group>"; };
+		670882A0D385C667EB50CFDDD68402FD /* Pods-NFATools_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NFATools_Example-frameworks.sh"; sourceTree = "<group>"; };
+		6CF771340306612F33706AA2B4F66332 /* Pods-NFATools_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NFATools_Example-umbrella.h"; sourceTree = "<group>"; };
+		7098B4F4159D348EFDEB8251FCCAD899 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		871B70B7D4C996EBC319F3E0FCA82920 /* Pods-NFATools_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NFATools_Example-Info.plist"; sourceTree = "<group>"; };
+		910CD44C1AC8A009A758ADE779603C29 /* Pods-NFATools_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NFATools_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		916FE78B8E40A2E9D5BB4E6668BFE03D /* NFATools-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NFATools-umbrella.h"; sourceTree = "<group>"; };
+		936FC9413D0B4E03B9D6FA6F9C448B3B /* NFATools.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = NFATools.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A60E3C3C23055172006F45C1 /* IPageDataPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPageDataPost.swift; sourceTree = "<group>"; };
+		A60E3C3F23055172006F45C1 /* RequestUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestUtil.swift; sourceTree = "<group>"; };
+		A60E3C4023055172006F45C1 /* SortUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortUtil.swift; sourceTree = "<group>"; };
+		A60E3C4123055172006F45C1 /* DateUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
+		A60E3C4323055172006F45C1 /* UserDefaultsUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsUtil.swift; sourceTree = "<group>"; };
+		A60E3C4423055172006F45C1 /* FileUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileUtil.swift; sourceTree = "<group>"; };
+		A60E3C4523055172006F45C1 /* Exts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exts.swift; sourceTree = "<group>"; };
+		A60E3C4723055172006F45C1 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		A60E3C4823055172006F45C1 /* MessageDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageDialog.swift; sourceTree = "<group>"; };
+		A60E3C4923055172006F45C1 /* CustomAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
+		A60E3C4A23055172006F45C1 /* Drop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drop.swift; sourceTree = "<group>"; };
+		A60E3C4B23055172006F45C1 /* MsgProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MsgProgress.swift; sourceTree = "<group>"; };
+		A60E3C4C23055172006F45C1 /* Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
+		A60E3C4D23055172006F45C1 /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		A60E3C4F23055172006F45C1 /* WkwebViewConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WkwebViewConfig.swift; sourceTree = "<group>"; };
+		A60E3C5023055172006F45C1 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		A60E3C5123055172006F45C1 /* WebViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewModel.swift; sourceTree = "<group>"; };
+		B2B3E4A2BD117B94F3B02EA3D6731A8F /* Pods-NFATools_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NFATools_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C3F03D5FD3CECACB696ACD8E74C1AD4E /* Pods-NFATools_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NFATools_Tests-dummy.m"; sourceTree = "<group>"; };
+		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CF76C5C91469B0F6F9D77312E4080966 /* Pods-NFATools_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NFATools_Tests-umbrella.h"; sourceTree = "<group>"; };
+		D4377D9653819C89E8B3AB8D65601D1C /* NFATools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NFATools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA4EF1E193C444F85AEEBBE6FC11BE8C /* Pods-NFATools_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NFATools_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DEAA48D28A1E1312E1C8FEE47E5F2E1A /* NFATools.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NFATools.modulemap; sourceTree = "<group>"; };
+		E007F5A55B7B9AE11F74F87CD24E9ECB /* Pods-NFATools_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NFATools_Example.release.xcconfig"; sourceTree = "<group>"; };
+		E409F145D52F6738C552C0624F7C83F3 /* NFATools-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NFATools-prefix.pch"; sourceTree = "<group>"; };
+		E4EBBE75384E584DBF59F5EC4415AD33 /* Pods-NFATools_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NFATools_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E69A475A0A8C1E0DA25E1D6AE0323BF8 /* Pods-NFATools_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NFATools_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		EA889FD4F749815A9A94E098EC6262E3 /* Pods_NFATools_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NFATools_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4895CFBBDD54EE4773D08DD0A9DDD25 /* Pods-NFATools_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NFATools_Example.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		71B5C7DE954ADDBF8F5735CEB218C41B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF6CFE5AC406C1B2EEAFFC380DFC36A3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ECD6FB3097392D5CE8540767C0F9BB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDCAE41F686A02FD115E116D075B38B5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EABB4513609B40E25EB45F8CE4DD10B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DF61E8F990FD21FC16A85D6F03A6566 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0DEF9B63B964158F7BC05CEC09517596 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				25746230FBB092D39FD3590A3B883728 /* Pods-NFATools_Example */,
+				C4E1CEBD0F275C5F5AA101CAB9634B63 /* Pods-NFATools_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		25746230FBB092D39FD3590A3B883728 /* Pods-NFATools_Example */ = {
+			isa = PBXGroup;
+			children = (
+				F4895CFBBDD54EE4773D08DD0A9DDD25 /* Pods-NFATools_Example.modulemap */,
+				DA4EF1E193C444F85AEEBBE6FC11BE8C /* Pods-NFATools_Example-acknowledgements.markdown */,
+				2CCEF347757FC368147A8E9A05140FE7 /* Pods-NFATools_Example-acknowledgements.plist */,
+				17CAB70910F07394B422A95711F49FED /* Pods-NFATools_Example-dummy.m */,
+				670882A0D385C667EB50CFDDD68402FD /* Pods-NFATools_Example-frameworks.sh */,
+				871B70B7D4C996EBC319F3E0FCA82920 /* Pods-NFATools_Example-Info.plist */,
+				6CF771340306612F33706AA2B4F66332 /* Pods-NFATools_Example-umbrella.h */,
+				910CD44C1AC8A009A758ADE779603C29 /* Pods-NFATools_Example.debug.xcconfig */,
+				E007F5A55B7B9AE11F74F87CD24E9ECB /* Pods-NFATools_Example.release.xcconfig */,
+			);
+			name = "Pods-NFATools_Example";
+			path = "Target Support Files/Pods-NFATools_Example";
+			sourceTree = "<group>";
+		};
+		25ED2FE4719CA7FA506A43A87A0C5C07 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4377D9653819C89E8B3AB8D65601D1C /* NFATools.framework */,
+				EA889FD4F749815A9A94E098EC6262E3 /* Pods_NFATools_Example.framework */,
+				06FB031C18D895F375AEAA61F7759459 /* Pods_NFATools_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27DC7D366D5E4FD809701EC9CC6AEF7F /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				7098B4F4159D348EFDEB8251FCCAD899 /* LICENSE */,
+				936FC9413D0B4E03B9D6FA6F9C448B3B /* NFATools.podspec */,
+				23DEC9FE55830F09196198AB29A70294 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		7AE63D89BE5CD6B0C2AAF3EAAFDD8ECF /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A60E3C3B23055172006F45C1 /* Base */,
+				A60E3C3D23055172006F45C1 /* utils */,
+				A60E3C4E23055172006F45C1 /* WebView */,
+				FCCDB0452A9BC6E89C4341DD75BD25CB /* NFATools */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		A60E3C3B23055172006F45C1 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A60E3C3C23055172006F45C1 /* IPageDataPost.swift */,
+			);
+			name = Base;
+			path = ../../NFATools/Classes/Base;
+			sourceTree = "<group>";
+		};
+		A60E3C3D23055172006F45C1 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				A60E3C3E23055172006F45C1 /* Net */,
+				A60E3C4023055172006F45C1 /* SortUtil.swift */,
+				A60E3C4123055172006F45C1 /* DateUtil.swift */,
+				A60E3C4223055172006F45C1 /* File */,
+				A60E3C4523055172006F45C1 /* Exts.swift */,
+				A60E3C4623055172006F45C1 /* Dialog */,
+				A60E3C4C23055172006F45C1 /* Tools.swift */,
+				A60E3C4D23055172006F45C1 /* Const.swift */,
+			);
+			name = utils;
+			path = ../../NFATools/Classes/utils;
+			sourceTree = "<group>";
+		};
+		A60E3C3E23055172006F45C1 /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				A60E3C3F23055172006F45C1 /* RequestUtil.swift */,
+			);
+			path = Net;
+			sourceTree = "<group>";
+		};
+		A60E3C4223055172006F45C1 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				A60E3C4323055172006F45C1 /* UserDefaultsUtil.swift */,
+				A60E3C4423055172006F45C1 /* FileUtil.swift */,
+			);
+			path = File;
+			sourceTree = "<group>";
+		};
+		A60E3C4623055172006F45C1 /* Dialog */ = {
+			isa = PBXGroup;
+			children = (
+				A60E3C4723055172006F45C1 /* Message.swift */,
+				A60E3C4823055172006F45C1 /* MessageDialog.swift */,
+				A60E3C4923055172006F45C1 /* CustomAlertView.swift */,
+				A60E3C4A23055172006F45C1 /* Drop.swift */,
+				A60E3C4B23055172006F45C1 /* MsgProgress.swift */,
+			);
+			path = Dialog;
+			sourceTree = "<group>";
+		};
+		A60E3C4E23055172006F45C1 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				A60E3C4F23055172006F45C1 /* WkwebViewConfig.swift */,
+				A60E3C5023055172006F45C1 /* WebView.swift */,
+				A60E3C5123055172006F45C1 /* WebViewModel.swift */,
+			);
+			name = WebView;
+			path = ../../NFATools/Classes/WebView;
+			sourceTree = "<group>";
+		};
+		C4E1CEBD0F275C5F5AA101CAB9634B63 /* Pods-NFATools_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				47A18FC4694A2968A587F650B4AB5FB0 /* Pods-NFATools_Tests.modulemap */,
+				B2B3E4A2BD117B94F3B02EA3D6731A8F /* Pods-NFATools_Tests-acknowledgements.markdown */,
+				E4EBBE75384E584DBF59F5EC4415AD33 /* Pods-NFATools_Tests-acknowledgements.plist */,
+				C3F03D5FD3CECACB696ACD8E74C1AD4E /* Pods-NFATools_Tests-dummy.m */,
+				0ACA5F8E86D03F68C9108581200E76D2 /* Pods-NFATools_Tests-Info.plist */,
+				CF76C5C91469B0F6F9D77312E4080966 /* Pods-NFATools_Tests-umbrella.h */,
+				E69A475A0A8C1E0DA25E1D6AE0323BF8 /* Pods-NFATools_Tests.debug.xcconfig */,
+				4CC1A9F65842BBB285DF34C8CE1DC3BC /* Pods-NFATools_Tests.release.xcconfig */,
+			);
+			name = "Pods-NFATools_Tests";
+			path = "Target Support Files/Pods-NFATools_Tests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				7AE63D89BE5CD6B0C2AAF3EAAFDD8ECF /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				25ED2FE4719CA7FA506A43A87A0C5C07 /* Products */,
+				0DEF9B63B964158F7BC05CEC09517596 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FCCDB0452A9BC6E89C4341DD75BD25CB /* NFATools */ = {
+			isa = PBXGroup;
+			children = (
+				27DC7D366D5E4FD809701EC9CC6AEF7F /* Pod */,
+				FDFF808CCC16DFE249B5ACEA6B722C1A /* Support Files */,
+			);
+			name = NFATools;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		FDFF808CCC16DFE249B5ACEA6B722C1A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DEAA48D28A1E1312E1C8FEE47E5F2E1A /* NFATools.modulemap */,
+				026A78EBECAA7E6877CBF365A0209002 /* NFATools.xcconfig */,
+				50ED6BD2D3DA609FDC5455FE818F134D /* NFATools-dummy.m */,
+				365FD6BE4DF5563F4C91C2F670B68096 /* NFATools-Info.plist */,
+				E409F145D52F6738C552C0624F7C83F3 /* NFATools-prefix.pch */,
+				916FE78B8E40A2E9D5BB4E6668BFE03D /* NFATools-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/NFATools";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		01ADA1B2AF79F8F2325D89386418CC22 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4D57ED9FEFE2947DE8D31F81F866958 /* Pods-NFATools_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FAF6B3A80822DC1FF9F1C8139BF9533 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				254EEB9499B67F72D61F726867020545 /* Pods-NFATools_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF729299BCDECBC3F87457A9D47090C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94D0CD661EAC6C3A62C0985508E9D55C /* NFATools-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1C708FA73851F4799397A05EBB4EA524 /* NFATools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6F33176533D37D23A4C2318AC65FF7 /* Build configuration list for PBXNativeTarget "NFATools" */;
+			buildPhases = (
+				EDF729299BCDECBC3F87457A9D47090C /* Headers */,
+				D7BD312999176EE3FC1D9A2515E008A6 /* Sources */,
+				9ECD6FB3097392D5CE8540767C0F9BB2 /* Frameworks */,
+				08E79FD3FDD7B63D269E3FDF033D0BB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NFATools;
+			productName = NFATools;
+			productReference = D4377D9653819C89E8B3AB8D65601D1C /* NFATools.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A333AC81D396819672421CBE265FB54E /* Pods-NFATools_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B91967FE9ACD354DC4DE0B2427EAEB0 /* Build configuration list for PBXNativeTarget "Pods-NFATools_Tests" */;
+			buildPhases = (
+				9FAF6B3A80822DC1FF9F1C8139BF9533 /* Headers */,
+				0ECD8DCE2AB551F19FA2EA8F39AA3952 /* Sources */,
+				EABB4513609B40E25EB45F8CE4DD10B9 /* Frameworks */,
+				B211F3704184546A20E48C9967327497 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0FA35B6C6EE39ED0A8EAFEC7BAE4BCD6 /* PBXTargetDependency */,
+			);
+			name = "Pods-NFATools_Tests";
+			productName = "Pods-NFATools_Tests";
+			productReference = 06FB031C18D895F375AEAA61F7759459 /* Pods_NFATools_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A5EF7E6440C7E9781E308D08B2F5F4B0 /* Pods-NFATools_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0BF35A6BCFAEC10014840DF6C22D677 /* Build configuration list for PBXNativeTarget "Pods-NFATools_Example" */;
+			buildPhases = (
+				01ADA1B2AF79F8F2325D89386418CC22 /* Headers */,
+				57F24B6D04AC7FC1D9F8B8411D78A372 /* Sources */,
+				71B5C7DE954ADDBF8F5735CEB218C41B /* Frameworks */,
+				7542DD27F38BC2DA6BCFE2A84C4C9FFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				039180C4FF714B9BD4633998B09B2EE4 /* PBXTargetDependency */,
+			);
+			name = "Pods-NFATools_Example";
+			productName = "Pods-NFATools_Example";
+			productReference = EA889FD4F749815A9A94E098EC6262E3 /* Pods_NFATools_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 25ED2FE4719CA7FA506A43A87A0C5C07 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1C708FA73851F4799397A05EBB4EA524 /* NFATools */,
+				A5EF7E6440C7E9781E308D08B2F5F4B0 /* Pods-NFATools_Example */,
+				A333AC81D396819672421CBE265FB54E /* Pods-NFATools_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08E79FD3FDD7B63D269E3FDF033D0BB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7542DD27F38BC2DA6BCFE2A84C4C9FFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B211F3704184546A20E48C9967327497 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0ECD8DCE2AB551F19FA2EA8F39AA3952 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5958F6011995637A7B504CD73831C1C7 /* Pods-NFATools_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57F24B6D04AC7FC1D9F8B8411D78A372 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62BEA9277466C57448A6CA9AD08FD78F /* Pods-NFATools_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7BD312999176EE3FC1D9A2515E008A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A60E3C5223055172006F45C1 /* IPageDataPost.swift in Sources */,
+				A60E3C6223055172006F45C1 /* WebViewModel.swift in Sources */,
+				A60E3C6023055172006F45C1 /* WkwebViewConfig.swift in Sources */,
+				A60E3C5A23055172006F45C1 /* MessageDialog.swift in Sources */,
+				A60E3C5C23055172006F45C1 /* Drop.swift in Sources */,
+				A60E3C5B23055172006F45C1 /* CustomAlertView.swift in Sources */,
+				A60E3C5823055172006F45C1 /* Exts.swift in Sources */,
+				A60E3C5D23055172006F45C1 /* MsgProgress.swift in Sources */,
+				A60E3C5723055172006F45C1 /* FileUtil.swift in Sources */,
+				A60E3C5923055172006F45C1 /* Message.swift in Sources */,
+				A60E3C5523055172006F45C1 /* DateUtil.swift in Sources */,
+				A60E3C5323055172006F45C1 /* RequestUtil.swift in Sources */,
+				A60E3C6123055172006F45C1 /* WebView.swift in Sources */,
+				A4E10810C09D5779A7A3556F8D38E06C /* NFATools-dummy.m in Sources */,
+				A60E3C5E23055172006F45C1 /* Tools.swift in Sources */,
+				A60E3C5623055172006F45C1 /* UserDefaultsUtil.swift in Sources */,
+				A60E3C5423055172006F45C1 /* SortUtil.swift in Sources */,
+				A60E3C5F23055172006F45C1 /* Const.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		039180C4FF714B9BD4633998B09B2EE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NFATools;
+			target = 1C708FA73851F4799397A05EBB4EA524 /* NFATools */;
+			targetProxy = AF18D5FEEAC0167269328A23C472D180 /* PBXContainerItemProxy */;
+		};
+		0FA35B6C6EE39ED0A8EAFEC7BAE4BCD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-NFATools_Example";
+			target = A5EF7E6440C7E9781E308D08B2F5F4B0 /* Pods-NFATools_Example */;
+			targetProxy = C6903256E408DD8BBA7A2E0DBCBA8A6A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		36EE454F01C0A20A92F8678297B89EF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 026A78EBECAA7E6877CBF365A0209002 /* NFATools.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NFATools/NFATools-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NFATools/NFATools-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NFATools/NFATools.modulemap";
+				PRODUCT_MODULE_NAME = NFATools;
+				PRODUCT_NAME = NFATools;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		63216985F34A15AB9CF6F3F6BA253291 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E69A475A0A8C1E0DA25E1D6AE0323BF8 /* Pods-NFATools_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NFATools_Tests/Pods-NFATools_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NFATools_Tests/Pods-NFATools_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		64004CC9D25B6FC5036AE09EB3D6AC3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CC1A9F65842BBB285DF34C8CE1DC3BC /* Pods-NFATools_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NFATools_Tests/Pods-NFATools_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NFATools_Tests/Pods-NFATools_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		980CDF7583CE4714BDCEE8D6EF12576E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 026A78EBECAA7E6877CBF365A0209002 /* NFATools.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NFATools/NFATools-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NFATools/NFATools-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NFATools/NFATools.modulemap";
+				PRODUCT_MODULE_NAME = NFATools;
+				PRODUCT_NAME = NFATools;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AB4D69770D8ACE3A05E80BB3502666F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		CC78344B13DFFD303E05EAACDAE97A81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 910CD44C1AC8A009A758ADE779603C29 /* Pods-NFATools_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NFATools_Example/Pods-NFATools_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NFATools_Example/Pods-NFATools_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D48BBA3D8C404729A952AF157D735482 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E007F5A55B7B9AE11F74F87CD24E9ECB /* Pods-NFATools_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NFATools_Example/Pods-NFATools_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NFATools_Example/Pods-NFATools_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F232B5ECA11A71BFA199A229B323F454 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6F33176533D37D23A4C2318AC65FF7 /* Build configuration list for PBXNativeTarget "NFATools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				980CDF7583CE4714BDCEE8D6EF12576E /* Debug */,
+				36EE454F01C0A20A92F8678297B89EF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB4D69770D8ACE3A05E80BB3502666F6 /* Debug */,
+				F232B5ECA11A71BFA199A229B323F454 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B91967FE9ACD354DC4DE0B2427EAEB0 /* Build configuration list for PBXNativeTarget "Pods-NFATools_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63216985F34A15AB9CF6F3F6BA253291 /* Debug */,
+				64004CC9D25B6FC5036AE09EB3D6AC3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0BF35A6BCFAEC10014840DF6C22D677 /* Build configuration list for PBXNativeTarget "Pods-NFATools_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC78344B13DFFD303E05EAACDAE97A81 /* Debug */,
+				D48BBA3D8C404729A952AF157D735482 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
