@@ -27,9 +27,6 @@
 		A60E3C5D23055172006F45C1 /* MsgProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60E3C4B23055172006F45C1 /* MsgProgress.swift */; };
 		A60E3C5E23055172006F45C1 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60E3C4C23055172006F45C1 /* Tools.swift */; };
 		A60E3C5F23055172006F45C1 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60E3C4D23055172006F45C1 /* Const.swift */; };
-		A60E3C6023055172006F45C1 /* WkwebViewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60E3C4F23055172006F45C1 /* WkwebViewConfig.swift */; };
-		A60E3C6123055172006F45C1 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60E3C5023055172006F45C1 /* WebView.swift */; };
-		A60E3C6223055172006F45C1 /* WebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60E3C5123055172006F45C1 /* WebViewModel.swift */; };
 		AF6CFE5AC406C1B2EEAFFC380DFC36A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		EDCAE41F686A02FD115E116D075B38B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		F4D57ED9FEFE2947DE8D31F81F866958 /* Pods-NFATools_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CF771340306612F33706AA2B4F66332 /* Pods-NFATools_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -85,9 +82,6 @@
 		A60E3C4B23055172006F45C1 /* MsgProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MsgProgress.swift; sourceTree = "<group>"; };
 		A60E3C4C23055172006F45C1 /* Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 		A60E3C4D23055172006F45C1 /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
-		A60E3C4F23055172006F45C1 /* WkwebViewConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WkwebViewConfig.swift; sourceTree = "<group>"; };
-		A60E3C5023055172006F45C1 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
-		A60E3C5123055172006F45C1 /* WebViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewModel.swift; sourceTree = "<group>"; };
 		B2B3E4A2BD117B94F3B02EA3D6731A8F /* Pods-NFATools_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NFATools_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C3F03D5FD3CECACB696ACD8E74C1AD4E /* Pods-NFATools_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NFATools_Tests-dummy.m"; sourceTree = "<group>"; };
 		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -182,7 +176,6 @@
 			children = (
 				A60E3C3B23055172006F45C1 /* Base */,
 				A60E3C3D23055172006F45C1 /* utils */,
-				A60E3C4E23055172006F45C1 /* WebView */,
 				FCCDB0452A9BC6E89C4341DD75BD25CB /* NFATools */,
 			);
 			name = "Development Pods";
@@ -248,17 +241,6 @@
 				A60E3C4B23055172006F45C1 /* MsgProgress.swift */,
 			);
 			path = Dialog;
-			sourceTree = "<group>";
-		};
-		A60E3C4E23055172006F45C1 /* WebView */ = {
-			isa = PBXGroup;
-			children = (
-				A60E3C4F23055172006F45C1 /* WkwebViewConfig.swift */,
-				A60E3C5023055172006F45C1 /* WebView.swift */,
-				A60E3C5123055172006F45C1 /* WebViewModel.swift */,
-			);
-			name = WebView;
-			path = ../../NFATools/Classes/WebView;
 			sourceTree = "<group>";
 		};
 		C4E1CEBD0F275C5F5AA101CAB9634B63 /* Pods-NFATools_Tests */ = {
@@ -481,8 +463,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A60E3C5223055172006F45C1 /* IPageDataPost.swift in Sources */,
-				A60E3C6223055172006F45C1 /* WebViewModel.swift in Sources */,
-				A60E3C6023055172006F45C1 /* WkwebViewConfig.swift in Sources */,
 				A60E3C5A23055172006F45C1 /* MessageDialog.swift in Sources */,
 				A60E3C5C23055172006F45C1 /* Drop.swift in Sources */,
 				A60E3C5B23055172006F45C1 /* CustomAlertView.swift in Sources */,
@@ -492,7 +472,6 @@
 				A60E3C5923055172006F45C1 /* Message.swift in Sources */,
 				A60E3C5523055172006F45C1 /* DateUtil.swift in Sources */,
 				A60E3C5323055172006F45C1 /* RequestUtil.swift in Sources */,
-				A60E3C6123055172006F45C1 /* WebView.swift in Sources */,
 				A4E10810C09D5779A7A3556F8D38E06C /* NFATools-dummy.m in Sources */,
 				A60E3C5E23055172006F45C1 /* Tools.swift in Sources */,
 				A60E3C5623055172006F45C1 /* UserDefaultsUtil.swift in Sources */,
