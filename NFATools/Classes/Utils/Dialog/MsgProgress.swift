@@ -155,8 +155,6 @@ open class MsgProgress: UIView {
             successImage = UIImage(named: "success.png")
             errorImage = UIImage(named: "error.png")
             break
-        default:
-            break
         }
     }
     

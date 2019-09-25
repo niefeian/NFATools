@@ -30,7 +30,7 @@ open class Tools {
     open class func getUUID() -> String{
         let uc = CFUUIDCreate(nil)
         let uuid  = CFUUIDCreateString(nil, uc)
-        return uuid as! String
+        return uuid! as String
     }
     
     /// 打开新的页面
@@ -77,11 +77,11 @@ open class Tools {
         var views = baseView.navigationController?.viewControllers
        
         if views?.count ?? 0 > 0 {
-            let lastViewClass = views![views!.count - 1].classForCoder
-            if childView.classForCoder == lastViewClass {
+            if childView.classForCoder == views![views!.count - 1].classForCoder {
                 return
             }
         }
+        
         if removeSelf && views != nil {
             views!.removeLast()
             views!.append(childView)
@@ -266,7 +266,7 @@ open class Tools {
     /// 旋转角度。传入角度，正数为顺时针，负数为逆时针，如逆时针旋转25度：transformRotation(25)
     open class func transformRotation(_ angle : Double) -> CGAffineTransform {
         let r : Double = angle / 180
-        return CGAffineTransform(rotationAngle: CGFloat(-M_PI*r))
+        return CGAffineTransform(rotationAngle: CGFloat(-1 * Double.pi * r))
     }
     
     /// 构建数组对应的json字符串
@@ -281,7 +281,7 @@ open class Tools {
         do {
             let data = try JSONSerialization.data(withJSONObject: d, options: JSONSerialization.WritingOptions.prettyPrinted)
             let strJson = NSString(data: data, encoding: String.Encoding.utf8.rawValue)
-            json = strJson as! String
+            json = strJson! as String
         }catch let e {
             print(e)
             return nil

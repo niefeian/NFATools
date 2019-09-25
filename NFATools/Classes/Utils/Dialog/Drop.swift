@@ -315,6 +315,8 @@ extension Drop {
             startTop = nil
             scheduleUpTimer(2.0)
         case .possible: break
+        @unknown default:
+            break
         }
     }
 }
