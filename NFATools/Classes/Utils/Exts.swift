@@ -22,7 +22,7 @@ public extension String {
         return temp as String
     }
     
-    func subString(start:Int, length:Int = -1)->String {
+   public func subString(start:Int, length:Int = -1)->String {
         var len = length
         if len == -1 {
             len = count - start
@@ -42,13 +42,13 @@ public extension Dictionary {
     }
 }
 
-extension CGFloat {
+public extension CGFloat {
     var valueBetweenZeroAndOne: CGFloat {
         return abs(self) > 1 ? 1 : abs(self)
     }
 }
 
-extension UIImage {
+public extension UIImage {
     public class func sharedCache() -> NSCache<AnyObject, AnyObject>!
     {
         return NSCache()

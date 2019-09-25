@@ -12,7 +12,6 @@ open class Const {
     
     public static let POST = "POST"
     public static let GET = "GET"
-    
     static let pass_suffix = ""
     
 }

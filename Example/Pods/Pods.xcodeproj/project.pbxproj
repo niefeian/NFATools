@@ -175,7 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				A60E3C3B23055172006F45C1 /* Base */,
-				A60E3C3D23055172006F45C1 /* utils */,
+				A60E3C3D23055172006F45C1 /* Utils */,
 				FCCDB0452A9BC6E89C4341DD75BD25CB /* NFATools */,
 			);
 			name = "Development Pods";
@@ -198,20 +198,20 @@
 			path = ../../NFATools/Classes/Base;
 			sourceTree = "<group>";
 		};
-		A60E3C3D23055172006F45C1 /* utils */ = {
+		A60E3C3D23055172006F45C1 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				A60E3C4623055172006F45C1 /* Dialog */,
+				A60E3C4223055172006F45C1 /* File */,
 				A60E3C3E23055172006F45C1 /* Net */,
 				A60E3C4023055172006F45C1 /* SortUtil.swift */,
 				A60E3C4123055172006F45C1 /* DateUtil.swift */,
-				A60E3C4223055172006F45C1 /* File */,
 				A60E3C4523055172006F45C1 /* Exts.swift */,
-				A60E3C4623055172006F45C1 /* Dialog */,
 				A60E3C4C23055172006F45C1 /* Tools.swift */,
 				A60E3C4D23055172006F45C1 /* Const.swift */,
 			);
-			name = utils;
-			path = ../../NFATools/Classes/utils;
+			name = Utils;
+			path = ../../NFATools/Classes/Utils;
 			sourceTree = "<group>";
 		};
 		A60E3C3E23055172006F45C1 /* Net */ = {

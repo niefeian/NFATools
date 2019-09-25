@@ -61,7 +61,6 @@ open class FileUtil {
     
     /// 彻底清除文件夹,异步:清理缓存用
     open class func cleanFolder(_ path: String = cachesPath, size : Double? = 0, complete:@escaping () -> ()) {
-//        MsgProgress.show("正在清理...")
         var fs = size
         if fs == 0 {
             fs = folderSize(path)
@@ -85,11 +84,11 @@ open class FileUtil {
             }
             
             DispatchQueue.main.async(execute: { () -> Void in
-//                MsgProgress.showSuccess("清理成功,释放缓存.")
                 complete()
             })
         }
     }
+    
     /// 计算单个文件的大小
     open class func fileSize(_ path: String) -> Double {
         let fileManager = FileManager.default
