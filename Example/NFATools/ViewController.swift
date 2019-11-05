@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        _ = SQLiteDB.sharedInstance().execute("CREATE TABLE head(id VARCHAR(36) PRIMARY KEY NOT NULL , json VARCHAR(2000) , key VARCHAR(100) , type  VARCHAR(10));")
+//        _ = SQLiteDB.sharedInstance().execute("CREATE TABLE head(id VARCHAR(36) PRIMARY KEY NOT NULL , json VARCHAR(2000) , key VARCHAR(100) , type  VARCHAR(10));")
               
         // Do any additional setup after loading the view, typically from a nib.
     }
