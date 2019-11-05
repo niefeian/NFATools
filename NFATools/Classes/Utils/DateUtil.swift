@@ -213,4 +213,8 @@ open class DateUtil {
         }
         return ret
     }
+    
+    open class func dateToStrt(_ date : Date) -> String {
+           return formatDateToStr(date, format: "yyyy-MM-dd-HH")
+    }
 }

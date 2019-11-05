@@ -27,6 +27,10 @@
 		A60E3C5D23055172006F45C1 /* MsgProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60E3C4B23055172006F45C1 /* MsgProgress.swift */; };
 		A60E3C5E23055172006F45C1 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60E3C4C23055172006F45C1 /* Tools.swift */; };
 		A60E3C5F23055172006F45C1 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60E3C4D23055172006F45C1 /* Const.swift */; };
+		A675E0C423710C0200061203 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A675E0C223710C0200061203 /* Reachability.swift */; };
+		A675E0C523710C0200061203 /* ReachabilityNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A675E0C323710C0200061203 /* ReachabilityNotificationView.swift */; };
+		A675E0C723710C2500061203 /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = A675E0C623710C2500061203 /* SQLiteDB.swift */; };
+		A675E0D4237110A400061203 /* data.db in Resources */ = {isa = PBXBuildFile; fileRef = A675E0D32371109F00061203 /* data.db */; };
 		AF6CFE5AC406C1B2EEAFFC380DFC36A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		EDCAE41F686A02FD115E116D075B38B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		F4D57ED9FEFE2947DE8D31F81F866958 /* Pods-NFATools_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CF771340306612F33706AA2B4F66332 /* Pods-NFATools_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -82,6 +86,10 @@
 		A60E3C4B23055172006F45C1 /* MsgProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MsgProgress.swift; sourceTree = "<group>"; };
 		A60E3C4C23055172006F45C1 /* Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 		A60E3C4D23055172006F45C1 /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		A675E0C223710C0200061203 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		A675E0C323710C0200061203 /* ReachabilityNotificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityNotificationView.swift; sourceTree = "<group>"; };
+		A675E0C623710C2500061203 /* SQLiteDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SQLiteDB.swift; path = ../../../../../../accfun/feifei_ios/FlyTheology/FlyTheology/Utils/SwiftDB/SQLiteDB.swift; sourceTree = "<group>"; };
+		A675E0D32371109F00061203 /* data.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = data.db; path = ../../NFATools/Assets/data.db; sourceTree = "<group>"; };
 		B2B3E4A2BD117B94F3B02EA3D6731A8F /* Pods-NFATools_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NFATools_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C3F03D5FD3CECACB696ACD8E74C1AD4E /* Pods-NFATools_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NFATools_Tests-dummy.m"; sourceTree = "<group>"; };
 		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -174,6 +182,7 @@
 		7AE63D89BE5CD6B0C2AAF3EAAFDD8ECF /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
+				A675E0D22371108600061203 /* Assets */,
 				A60E3C3B23055172006F45C1 /* Base */,
 				A60E3C3D23055172006F45C1 /* Utils */,
 				FCCDB0452A9BC6E89C4341DD75BD25CB /* NFATools */,
@@ -201,6 +210,7 @@
 		A60E3C3D23055172006F45C1 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				A675E0C123710C0200061203 /* Reachability */,
 				A60E3C4623055172006F45C1 /* Dialog */,
 				A60E3C4223055172006F45C1 /* File */,
 				A60E3C3E23055172006F45C1 /* Net */,
@@ -209,6 +219,7 @@
 				A60E3C4523055172006F45C1 /* Exts.swift */,
 				A60E3C4C23055172006F45C1 /* Tools.swift */,
 				A60E3C4D23055172006F45C1 /* Const.swift */,
+				A675E0C623710C2500061203 /* SQLiteDB.swift */,
 			);
 			name = Utils;
 			path = ../../NFATools/Classes/Utils;
@@ -241,6 +252,24 @@
 				A60E3C4B23055172006F45C1 /* MsgProgress.swift */,
 			);
 			path = Dialog;
+			sourceTree = "<group>";
+		};
+		A675E0C123710C0200061203 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				A675E0C223710C0200061203 /* Reachability.swift */,
+				A675E0C323710C0200061203 /* ReachabilityNotificationView.swift */,
+			);
+			name = Reachability;
+			path = ../../../../../../accfun/feifei_ios/FlyTheology/FlyTheology/Utils/Reachability;
+			sourceTree = "<group>";
+		};
+		A675E0D22371108600061203 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				A675E0D32371109F00061203 /* data.db */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 		C4E1CEBD0F275C5F5AA101CAB9634B63 /* Pods-NFATools_Tests */ = {
@@ -422,6 +451,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A675E0D4237110A400061203 /* data.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +495,7 @@
 				A60E3C5223055172006F45C1 /* IPageDataPost.swift in Sources */,
 				A60E3C5A23055172006F45C1 /* MessageDialog.swift in Sources */,
 				A60E3C5C23055172006F45C1 /* Drop.swift in Sources */,
+				A675E0C723710C2500061203 /* SQLiteDB.swift in Sources */,
 				A60E3C5B23055172006F45C1 /* CustomAlertView.swift in Sources */,
 				A60E3C5823055172006F45C1 /* Exts.swift in Sources */,
 				A60E3C5D23055172006F45C1 /* MsgProgress.swift in Sources */,
@@ -476,7 +507,9 @@
 				A60E3C5E23055172006F45C1 /* Tools.swift in Sources */,
 				A60E3C5623055172006F45C1 /* UserDefaultsUtil.swift in Sources */,
 				A60E3C5423055172006F45C1 /* SortUtil.swift in Sources */,
+				A675E0C423710C0200061203 /* Reachability.swift in Sources */,
 				A60E3C5F23055172006F45C1 /* Const.swift in Sources */,
+				A675E0C523710C0200061203 /* ReachabilityNotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

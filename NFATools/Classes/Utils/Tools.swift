@@ -314,10 +314,18 @@ open class Tools {
     }
     
     //设置圆角并描边
-    class func masksToBounds(cornerView:UIView,cornerRadius:CGFloat = 0 , borderWidth:CGFloat = 0 , borderColor : UIColor) {
+   open class func masksToBounds(cornerView:UIView,cornerRadius:CGFloat = 0 , borderWidth:CGFloat = 0 , borderColor : UIColor) {
         cornerView.layer.cornerRadius = cornerRadius
         cornerView.layer.borderWidth = borderWidth
         cornerView.layer.borderColor = borderColor.cgColor
     }
+    
+    open class  func serCorner( _ view : UIView , byRoundingCorners corners: UIRectCorner, radii: CGFloat) {
+           let maskPath = UIBezierPath(roundedRect: view.bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radii, height: radii))
+           let maskLayer = CAShapeLayer()
+           maskLayer.frame = view.bounds
+           maskLayer.path = maskPath.cgPath
+           view.layer.mask = maskLayer
+       }
 
 }

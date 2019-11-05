@@ -14,6 +14,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		A675E0DA2371113F00061203 /* data.db in Resources */ = {isa = PBXBuildFile; fileRef = A675E0D92371113F00061203 /* data.db */; };
 		A92395DFF81062F5D803F966 /* Pods_NFATools_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A596408A9FA9C5A131653B20 /* Pods_NFATools_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,9 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		78386019812FB3B68932B0F7 /* Pods-NFATools_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NFATools_Example.debug.xcconfig"; path = "Target Support Files/Pods-NFATools_Example/Pods-NFATools_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A596408A9FA9C5A131653B20 /* Pods_NFATools_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NFATools_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A675E0C823710F4000061203 /* NFATools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NFATools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A675E0D52371110E00061203 /* NFATools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NFATools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A675E0D92371113F00061203 /* data.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = data.db; path = ../../NFATools/Assets/data.db; sourceTree = "<group>"; };
 		A94F5715599E3260C0CB72A0 /* NFATools.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NFATools.podspec; path = ../NFATools.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D267B20C5140955BE702A8DF /* Pods-NFATools_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NFATools_Tests.debug.xcconfig"; path = "Target Support Files/Pods-NFATools_Tests/Pods-NFATools_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,6 +108,7 @@
 		607FACD21AFB9204008FA782 /* Example for NFATools */ = {
 			isa = PBXGroup;
 			children = (
+				A675E0D92371113F00061203 /* data.db */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -153,6 +158,8 @@
 		D58CDCA8B1D125E0BFE26E9E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A675E0D52371110E00061203 /* NFATools.framework */,
+				A675E0C823710F4000061203 /* NFATools.framework */,
 				41DE9BC327B60B0736E67768 /* Pods_NFATools_Example.framework */,
 				A596408A9FA9C5A131653B20 /* Pods_NFATools_Tests.framework */,
 			);
@@ -246,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				A675E0DA2371113F00061203 /* data.db in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -487,6 +495,7 @@
 			baseConfigurationReference = 78386019812FB3B68932B0F7 /* Pods-NFATools_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = NFATools/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -502,6 +511,7 @@
 			baseConfigurationReference = 2ABE4DA5A818C755F68E78D3 /* Pods-NFATools_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = NFATools/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
